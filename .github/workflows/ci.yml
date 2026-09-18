@@ -24,3 +24,6 @@ jobs:
 
       - name: Build application
         run: dotnet build bmi2025.sln --configuration Release --no-restore
+
+      - name: Run unit tests
+        run: dotnet test bmi2025.sln --configuration Release --no-build --verbosity normal
